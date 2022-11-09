@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+     <style>
+        .main-container{
+     
+            width: 75%; height: 600px;margin:0 auto; margin-top: 100px;
+        }
+        .main-container>div{ 
+          float: left;
+            width: 33.33%; height: 100%;
+        }
+        .sedans{
+            background-color: rgb(255, 81, 0);
+        }
+        .suvs{
+            background-color: rgb(30, 113, 124);
+        }
+        .luxury{
+            background-color: rgb(0, 70, 58);
+        }
+        .circle{
+            width: 64px; height: 40px; border-radius: 50%;  margin-left: 30px; margin-top: 30px;
+        }
+        .sname{
+         margin-left: 30px; margin-top: 30px; font-size: 40px; text-align: left; color: white; font-family: Arial, Helvetica, sans-serif;
+          
+        }
+        .discription{
+         margin-left: 30px; margin-top: 30px; font-size: 20px; text-align: left; color: white; 
+         font-family: Arial, Helvetica, sans-serif;
+          width: 70%; height: 200px;
+        }
+        .learnMores{
+         margin-left: 30px; margin-top: 100px; color: rgb(255, 81, 0); 
+          width: 50%; background-color: white; height: 60px; border-radius: 50px; border: none;
+        }
+        
+        .learnMoresh:hover{
+         color:white; cursor: pointer;
+         background-color: transparent; border: 2px solid white;
+        }
+         .lms{
+            font-size: 20px;
+         }
+      
+        .learnMoresu{
+         margin-left: 30px; margin-top: 100px;  color: rgb(30, 113, 124); 
+          width: 50%; background-color: white; height: 60px; border-radius: 50px; border: none;
+        }
+        .learnMorel{
+         margin-left: 30px; margin-top: 100px;  color:  rgb(0, 70, 58); 
+          width: 50%; background-color: white; height: 60px; border-radius: 50px;border: none; 
+        }
+ 
+     
+          @media only screen and (max-width: 950px ){
+            .main-container{
+                width: 90%;
+            }
+            .learnMores{
+            width: 60%;
+           }
+           .learnMoresu{
+            width: 60%;
+           }
+           .learnMorel{
+            width: 60%;
+           }
+          }
+          @media only screen and (max-width:800px ){
+            .learnMores{
+            width: 70%;
+           }
+           .learnMoresu{
+            width: 70%;
+           }
+           .learnMorel{
+            width: 70%;
+           }
+          }
+
+          @media only screen and (max-width: 600px ){
+            .main-container{
+        
+           width: 90%; height: 1800px;
+       }
+        .main-container>div{
+            
+           width: 100%; height: 600px;
+        }
+        .learnMores{
+            width: 50%;
+           }
+           .learnMoresu{
+            width: 50%;
+           }
+           .learnMorel{
+            width: 50%;
+           }
+          }
+     </style>
+    </head>
+    <body>
+
+    <div class="main-container" >
+         <div class="sedans">
+            <div class="circle">
+           <img  src="icon-sedans.svg" width="100%" height="100%" alt="sedanimg">
+            </div>
+            <div class="sname">SEDANS</div>
+            <div class="discription">
+                <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
+                or on your next road trip
+            </p>
+        </div>
+            <button class="learnMores  learnMoresh"><p class="lms">Learn More</p></button>
+         </div>
+
+         <div class="suvs">
+            <div class="circle">
+                <img  src="icon-suvs.svg" width="100%" height="100%" alt="suvimg"> 
+            </div>
+            <div class="sname">SUVS</div>
+            <div class="discription">
+                <p>Take an SUV for its spacious interior, power and versatility. Perfect for your next family 
+                vacation and off-road adventures.
+            </p>
+        </div>
+            <button class="learnMoresu  learnMoresh"><p class="lms">Learn More</p></button>
+         </div>
+
+         <div class="luxury">
+            <div class="circle">
+        <img  src="icon-luxury.svg" width="100%" height="100%" alt="luxuryimg">
+            </div>
+            <div class="sname">LUXURY</div>
+            <div class="discription">
+                <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of the 
+                luxury rental and arrive in style.
+            </p>
+        </div>
+            <button class="learnMorel  learnMoresh"><p class="lms">Learn More</p></button>
+         </div>
+    </div>
+
+
+
+    </body>
+</html>
